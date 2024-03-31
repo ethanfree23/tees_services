@@ -14,7 +14,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "babel src -d build && react-scripts build", // Add Babel compilation before the build script
+    "build": "babel src -d build && react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
