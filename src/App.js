@@ -7,6 +7,33 @@ import {
   ServerIcon,
 } from '@heroicons/react/20/solid'
 import { BoltIcon, CalendarDaysIcon, UsersIcon } from '@heroicons/react/24/outline'
+import { useState, useEffect } from 'react'
+import Carousel from './Carousel'
+
+// import image1 from './photos/image1.JPG'
+// import image2 from './photos/image2.JPG'
+// import image3 from './photos/image3.JPG'
+// import image4 from './photos/image4.JPG'
+// import image5 from './photos/image5.jpg'
+// import image6 from './photos/image6.JPG'
+// import image7 from './photos/image7.JPG'
+// import image8 from './photos/image8.JPG'
+// import image9 from './photos/image9.JPG'
+// import image10 from './photos/image10.JPG'
+// import image11 from './photos/image11.JPG'
+// import image12 from './photos/image12.JPG'
+// import image13 from './photos/image13.JPG'
+// import image14 from './photos/image14.JPG'
+// import image15 from './photos/image15.JPG'
+// import image16 from './photos/image16.JPG'
+// import image17 from './photos/image17.JPG'
+// import image18 from './photos/image18.JPG'
+// import image19 from './photos/image19.JPG'
+// import image20 from './photos/image20.JPG'
+// import image21 from './photos/image21.JPG'
+// import image22 from './photos/image22.jpg'
+// import image23 from './photos/image23.JPG'
+// import image24 from './photos/image24.jpg'
 
 const primaryFeatures = [
   {
@@ -70,30 +97,30 @@ const stats = [
   { id: 4, name: 'Competitors than come close to my skillset', value: '0' },
 ]
 const footerNavigation = {
-  solutions: [
-    { name: 'Hosting', href: '#' },
-    { name: 'Data Services', href: '#' },
-    { name: 'Uptime Monitoring', href: '#' },
-    { name: 'Enterprise Services', href: '#' },
-  ],
-  support: [
-    { name: 'Pricing', href: '#' },
-    { name: 'Documentation', href: '#' },
-    { name: 'Guides', href: '#' },
-    { name: 'API Reference', href: '#' },
-  ],
-  company: [
-    { name: 'About', href: '#' },
-    { name: 'Blog', href: '#' },
-    { name: 'Jobs', href: '#' },
-    { name: 'Press', href: '#' },
-    { name: 'Partners', href: '#' },
-  ],
-  legal: [
-    { name: 'Claim', href: '#' },
-    { name: 'Privacy', href: '#' },
-    { name: 'Terms', href: '#' },
-  ],
+  // solutions: [
+  //   { name: 'Hosting', href: '#' },
+  //   { name: 'Data Services', href: '#' },
+  //   { name: 'Uptime Monitoring', href: '#' },
+  //   { name: 'Enterprise Services', href: '#' },
+  // ],
+  // support: [
+  //   { name: 'Pricing', href: '#' },
+  //   { name: 'Documentation', href: '#' },
+  //   { name: 'Guides', href: '#' },
+  //   { name: 'API Reference', href: '#' },
+  // ],
+  // company: [
+  //   { name: 'About', href: '#' },
+  //   { name: 'Blog', href: '#' },
+  //   { name: 'Jobs', href: '#' },
+  //   { name: 'Press', href: '#' },
+  //   { name: 'Partners', href: '#' },
+  // ],
+  // legal: [
+  //   { name: 'Claim', href: '#' },
+  //   { name: 'Privacy', href: '#' },
+  //   { name: 'Terms', href: '#' },
+  // ],
   social: [
     {
       name: 'Facebook',
@@ -158,8 +185,47 @@ const footerNavigation = {
     // },
   ],
 }
+// const photoArray = [
+//   image1,
+//   image2,
+//   image3,
+//   image4,
+//   image5,
+//   image6,
+//   image7,
+//   image8,
+//   image9,
+//   image10,
+//   image11,
+//   image12,
+//   image13,
+//   image14,
+//   image15,
+//   image16,
+//   image17,
+//   image18,
+//   image19,
+//   image20,
+//   image21,
+//   image22,
+//   image23,
+//   image24,
+// ];
+
+
 
 function App() {
+  // const [currentIndex, setCurrentIndex] = useState(0);
+
+  // useEffect(() => {
+  //   const intervalId = setInterval(() => {
+  //     setCurrentIndex((prevIndex) => (prevIndex + 1) % photoArray.length);
+  //   }, 4000); // Interval duration is 4 seconds
+
+  //   // Cleanup function to clear interval
+  //   return () => clearInterval(intervalId);
+  // }, []);
+
   return (
     <div className="bg-gray-900">
       <main>
@@ -325,6 +391,23 @@ function App() {
             </dl>
           </div>
         </div>
+
+        {/* Carousel container */}
+        {/* <div className="w-screen h-1/2">
+          <div className="flex flex-wrap justify-center">
+            {photoArray.map((photo, index) => (
+              <div key={index} className="m-5">
+                <img
+                  src={photo}
+                  alt={`Slide ${index + 1}`}
+                  className="size-72 object-cover m-2"
+                />
+              </div>
+            ))}
+          </div>
+        </div> */}
+        <Carousel />
+
 
         {/* Feature section */}
         <div className="mt-32 sm:mt-56">
