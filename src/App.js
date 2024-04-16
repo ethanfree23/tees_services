@@ -15,7 +15,7 @@ const primaryFeatures = [
       'Tee with pipe yo hoe in all 3 holes. bich wont know what hit dat bih.',
     href: '#',
     icon: BoltIcon,
-  },c
+  },
   {
     name: 'Wood',
     description:
