@@ -1,95 +1,71 @@
 import {
-  ArrowPathIcon,
-  CloudArrowUpIcon,
-  Cog6ToothIcon,
-  FingerPrintIcon,
-  LockClosedIcon,
-  ServerIcon,
-} from '@heroicons/react/20/solid'
+  WrenchScrewdriverIcon as PlumbingIcon,
+  PaintBrushIcon as PaintingIcon,
+  BuildingOfficeIcon as SheetrockIcon,
+  ShieldCheckIcon as IntegrityIcon,
+  SparklesIcon as QualityIcon,
+  HomeModernIcon as LocalIcon,
+} from '@heroicons/react/20/solid';
 import { BoltIcon, CalendarDaysIcon, UsersIcon } from '@heroicons/react/24/outline'
-import { useState, useEffect } from 'react'
 import Carousel from './Carousel'
 
-// import image1 from './photos/image1.JPG'
-// import image2 from './photos/image2.JPG'
-// import image3 from './photos/image3.JPG'
-// import image4 from './photos/image4.JPG'
-// import image5 from './photos/image5.jpg'
-// import image6 from './photos/image6.JPG'
-// import image7 from './photos/image7.JPG'
-// import image8 from './photos/image8.JPG'
-// import image9 from './photos/image9.JPG'
-// import image10 from './photos/image10.JPG'
-// import image11 from './photos/image11.JPG'
-// import image12 from './photos/image12.JPG'
-// import image13 from './photos/image13.JPG'
-// import image14 from './photos/image14.JPG'
-// import image15 from './photos/image15.JPG'
-// import image16 from './photos/image16.JPG'
-// import image17 from './photos/image17.JPG'
-// import image18 from './photos/image18.JPG'
-// import image19 from './photos/image19.JPG'
-// import image20 from './photos/image20.JPG'
-// import image21 from './photos/image21.JPG'
-// import image22 from './photos/image22.jpg'
-// import image23 from './photos/image23.JPG'
-// import image24 from './photos/image24.jpg'
 
 const primaryFeatures = [
   {
-    name: 'Piping',
+    name: 'Plumbing',
     description:
-      'More info.',
+      "From fixing leaky faucets to installing water heaters, Tee's Handyman Services provides reliable plumbing solutions for all your needs.",
     href: '#',
     icon: BoltIcon,
   },
   {
     name: 'Wood',
     description:
-      'More info.',
+      "Tee's crew offers professional sheetrock installation and repair to create smooth, flawless walls and ceilings.",
     href: '#',
     icon: UsersIcon,
   },
   {
     name: 'Cocking',
     description:
-      'More info',
+      "Tee's team of skilled painters can bring your vision to life with quality interior and exterior painting services.",
     href: '#',
     icon: CalendarDaysIcon,
   },
 ]
 const secondaryFeatures = [
   {
-    name: 'Service name',
-    description: 'Service description',
-    icon: CloudArrowUpIcon,
+    name: 'Expert Plumbing',
+    description: 'From repairs to installations, Tee and his team handle all your plumbing needs efficiently and expertly.',
+    icon: PlumbingIcon,
   },
   {
-    name: 'Service name',
-    description: 'Service description',
-    icon: LockClosedIcon,
+    name: 'Sheetrock Services',
+    description: 'Professional sheetrock services for a flawless finish in your home or business.',
+    icon: SheetrockIcon,
   },
   {
-    name: 'Service name',
-    description: 'Service description',
-    icon: ArrowPathIcon,
+    name: 'Painting',
+    description: 'Precision painting services that add color and life to your spaces.',
+    icon: PaintingIcon,
   },
   {
-    name: 'Service name',
-    description: 'Service description',
-    icon: FingerPrintIcon,
+    name: 'Honesty and Integrity',
+    description: 'Tee and his team prioritize transparent communication and fair pricing to earn your trust.',
+    icon: IntegrityIcon,
   },
   {
-    name: 'Service name',
-    description: 'Service description',
-    icon: Cog6ToothIcon,
+    name: 'Quality Craftsmanship',
+    description: 'Exceptional quality work in every project, ensuring lasting results and customer satisfaction.',
+    icon: QualityIcon,
   },
   {
-    name: 'Service name',
-    description: 'Service description',
-    icon: ServerIcon,
+    name: 'Supporting Local',
+    description: "Tee's team supports the community by using local suppliers and offering reliable, homegrown services.",
+    icon: LocalIcon,
   },
 ]
+
 const stats = [
   { id: 1, name: 'Homeowners serviced', value: '200+' },
   { id: 2, name: 'Recurring business', value: '24 customers' },
@@ -215,16 +191,6 @@ const footerNavigation = {
 
 
 function App() {
-  // const [currentIndex, setCurrentIndex] = useState(0);
-
-  // useEffect(() => {
-  //   const intervalId = setInterval(() => {
-  //     setCurrentIndex((prevIndex) => (prevIndex + 1) % photoArray.length);
-  //   }, 4000); // Interval duration is 4 seconds
-
-  //   // Cleanup function to clear interval
-  //   return () => clearInterval(intervalId);
-  // }, []);
 
   return (
     <div className="bg-gray-900">
@@ -282,11 +248,10 @@ function App() {
                 </a>
               </div>
               <h1 className="mt-10 text-4xl font-bold tracking-tight text-white sm:text-6xl">
-                On Call Handy Man
+                Tee's Handyman Service
               </h1>
               <p className="mt-6 text-lg leading-8 text-gray-300">
-                Whether you need work in your kitchen, bathroom, garage, patio, or any other room in your house, Theran is your go to expert servicing the Great Conroe area.
-              </p>
+                Expert plumbing with a touch of carpentry, sheetrock, and painting for a complete home solution.              </p>
               <div className="mt-10 flex items-center gap-x-6">
                 <a
                   href="#"
@@ -416,8 +381,7 @@ function App() {
               <h2 className="text-base font-semibold leading-7 text-indigo-400">Everything you need</h2>
               <p className="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">Get a professional opinion today</p>
               <p className="mt-6 text-lg leading-8 text-gray-300">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque,
-                iste dolor cupiditate blanditiis.
+                Contact Tee today for reliable and expert handyman services — your home will thank you!
               </p>
             </div>
           </div>

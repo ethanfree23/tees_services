@@ -72,7 +72,7 @@ const Carousel = () => {
     };
 
     return (
-        <div className="w-screen h-1/2 flex items-center justify-center">
+        <div className="w-full h-1/2 flex items-center justify-center mt-44">
             {/* Left arrow */}
             <button
                 className="mx-2 p-2 bg-gray-300 hover:bg-gray-400 rounded-full"
